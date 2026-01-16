@@ -7,12 +7,16 @@
         <meta name = "description" content = "Este es nuestro primer sitio web empresarial!">
         <meta name = "author" content = "Cauã Oliveira, Zoé Natália, Carlos Gael, José Roberto">
         <title>Vaseline®</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
     </head>
     <body>
+        <!---Encabezado-->
         <div class = "container" name = "Encabezado">
 
-            <h1>Vaseline</h1>
-            <img src = "images/logo.png">
+            <img src = "images/vaseline.png">
 
             <div class = "container" name = "introduccion">
                 <h3>BEAUTIFUL SKIN IS HEALTHY SKIN</h3>
@@ -29,6 +33,180 @@
                     <p>We want to give every body healthy skin. And when we say every body, we mean it. No matter your age, gender, or ethnicity, we are here for you. Your journey to beautiful, healthy skin starts with Vaseline®.</p>
             </div>
         </div>
+
+        <div class="container" name="proyectos">
+            <h3> Nuestros Proyectos </h3>
+             <p>
+                Desde el comienzo de nuestra historia, la marca Vaseline®️ ha estado ayudando a las personas a tener una piel de apariencia saludable. 
+                Nuestra misión es clara y nunca termina: buscamos crear productos de cuidado de la piel que sean accesibles, con el fin de asistir a cada persona,
+                en cualquier lugar, a mantener su piel sana todos los días para que puedan afrontar los desafíos diarios.
+            </p>
+
+        <!--Descripción de proyectos-->
+            <div class="proyectos">
+            <!-- Proyecto 1 -->
+            <div class="proyecto texto-izq">
+            <div class="proyecto-texto">
+                <h4> The Vaseline®️ Healing Project </h4>
+                <p>
+                Nuestra piel siempre está en contacto con el mundo y es fundamental para nuestro bienestar.
+                    Por eso creemos que cada persona, en cualquier lugar, merece tener una piel sana.
+                    Lamentablemente no todas las personas cuentan con acceso a atención médica, por lo cual Vaseline®️ ha comenzado a proporcionar atención médica y productos
+                    para el cuidado de la piel a personas en áreas afectadas por crisis o con acceso limitado a atención médica,
+                    con el objetivo de ayudar a sanar la piel y mejorar la calidad de vida de las comunidades vulnerables.
+                </p>
+            </div>
+            <div class="proyecto-imagen">
+                <img src="images/vaselina1.jpg" alt="The Vaseline Healing Project">
+            </div>
+            </div>
+
+
+         <!-- Proyecto 2 -->
+         <div class="proyecto texto-der">
+          <div class="proyecto-imagen">
+            <img src="images/Vaselina2.jpg" alt="The Vaseline®️ Natural Glow">
+          </div>
+          <div class="proyecto-texto">
+            <h4> The Vaseline®️ Natural Glow </h4>
+            <p>
+              En Vaselina creemos que la verdadera belleza comienza con el respeto: respeto por tu piel y respeto por el entorno que nos rodea.
+              Por eso lanzamos Brillo Natural, una iniciativa que combina innovación dermatológica con sostenibilidad ambiental al desarrollar fórmulas con componentes de origen natural y procesos de producción más limpios.
+              Así mismo, trabajamos en nuevos diseños de nuestros empaques para reducir el impacto ambiental y fomentar la economía circular. Al colaborar con comunidades locales en proyectos de reforestación y educación ambiental,
+              cada aplicación de Vaselina no solo protege tu piel, también contribuye a un futuro más saludable para todos.
+            </p>
+          </div>
+         </div>
+      </div>
+        <!---Proyecto 3 -->  
+        <div class="footer-Proyecto3">
+        <h3><br>¡Todo el poder reparador corporal de Vaseline®️ llega a México!</h3>
+        <h4>
+            Buscamos una expansión de línea corporal en México con lanzamientos de la gama Vaseline®️ Intensive Care™️ y
+            Vaseline®️ Clinical Care™️, con productos como lociones con complejo restaurador de barrera, aloe vera y
+            fórmulas mejoradas para piel extremadamente seca, con resultados clínicos en solo 5 días.
+        </h4>
+        <br>
+        <img src="images/Mexico.webp" alt="Proyecto México">
+    </div>
+
+    
+    <!--- Sección de Contacto -->
+        <section class="container" name="contacto" aria-labelledby="titulo-contacto">
+    <h4 id="titulo-contacto">Contacto</h4>
+
+    <form action="#" method="post" class="contact-form" novalidate>
+        
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                placeholder="Tu nombre completo"
+                required
+                minlength="3"
+                aria-required="true">
+        </div>
+
+        <div class="form-group">
+            <label for="correo">Correo electrónico</label>
+            <input 
+                type="email" 
+                id="correo" 
+                name="correo" 
+                placeholder="ejemplo@correo.com"
+                required
+                aria-required="true">
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea 
+                id="mensaje" 
+                name="mensaje" 
+                rows="5"
+                placeholder="Escribe tu mensaje"
+                required
+                minlength="10"
+                aria-required="true"></textarea>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+        </form>
+        </section>
+
+
+        <!--- Pie de Página -->
+        <footer class="footer">
+            <div class=""footer>
+            
+
+            <div class="container">
+
+                <div class="footer-row">
+
+
+                    <div class="footer-links">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="https://www.vaseline.com/us/es/who-we-are/our-history.html">Nosotros</a></li>
+                            <li><a
+                                    href="https://www.unilevernotices.com/privacy-notices/usa-spanish.html#consumerhealth">Política
+                                    de Privacidad de la Información sobre la Salud del Consumidor</a></li>
+                            <li><a href="https://www.unilevernotices.com/privacy-notices/usa-spanish.html">Política de
+                                    Privacidad</a></li>
+                            <li><a href="https://www.unileverus.com/terms/termsofuse.html">Términos de Uso</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-links">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="https://www.vaseline.com/us/es/where-to-buy.html">Dónde Comprar</a></li>
+                            <li><a href="https://www.vaseline.com/us/es/contactanos.html">Contáctanos</a></li>
+                            <li><a href="https://www.vaseline.com/us/es/contactanos.html">Chat en Vivo</a></li>
+                            <li><a href="https://www.vaseline.com/us/es/contactanos/faq.html">Preguntas Frecuentes</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-links">
+                        <h4>Explorar</h4>
+                        <ul>
+                            <li><a href="https://www.vaseline.com/us/es/products.html">Todos los Productos</a></li>
+                            <li><a href="https://www.vaseline.com/us/es/articles.html">Todos los Artículos</a></li>
+                            <li><a href="https://www.vaseline.com/us/es/healing-project.html">Piel Saludable</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-links">
+                        <h4>Síguenos</h4>
+                        <div class="social-link">
+                            <a href="https://www.facebook.com/VaselineUS?brand_redir=1"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/vaselinebrand/?hl=es"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/VaselineBrand"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-copyright">
+                    <h4>©️ 2026 Unilever. Todos los derechos reservados.
+                        Este sitio web está dirigido exclusivamente a los consumidores estadounidenses de productos y
+                        servicios de Unilever United States.
+                        Este sitio web no está dirigido a consumidores radicados fuera de Estados Unidos</h4>
+                </div>
+            </div>
+
+        </footer>
+        </div>
+
+
         
     </body>
 
