@@ -1,3 +1,343 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
-  background-color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f172a; /* azul escuro */
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+/* Container principal (encabezado) */
+.container[name="Encabezado"] {
+  min-height: 130vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+  background-color: #0d213e;
+  padding: 4rem;
+  text-align: center;
+}
+
+/* Título principal */
+.container[name="Encabezado"] h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+/* Imagen de la logo */
+.container[name="Encabezado"] img {
+  width: 220px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+
+/* Introdução */
+.container[name="introduccion"] {
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.container[name="introduccion"] h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.container[name="introduccion"] p {
+  font-size: 1.1rem;
+}
+
+/* Missão e Visão */
+.container[name="mission"],
+.container[name="vision"] {
+  background-color: #1e3a8a; /* azul escuro contrastante */
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 45%;
+}
+
+/* Agrupamento lateral */
+.container[name="mission"],
+.container[name="vision"] {
+  display: inline-block;
+  vertical-align: top;
+  margin: 1rem;
+}
+
+/* Títulos missão / visão */
+.container[name="mission"] h4,
+.container[name="vision"] h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Texto missão / visão */
+.container[name="mission"] p,
+.container[name="vision"] p {
+  font-size: 1rem;
+}
+
+/* Responsivo (celular) */
+@media (max-width: 768px) {
+  .container[name="mission"],
+  .container[name="vision"] {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .container[name="Encabezado"] h1 {
+    font-size: 2.2rem;
+  }
+}
+
+body {
+  background-color: #0d213e;
+}
+
+.container[name="proyectos"] {
+  margin: 1rem auto;
+  max-width: 1000px;
+  text-align: center;
+  background-color: #0d213e;
+}
+
+.container[name="proyectos"] h3 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #c19c60;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-around;
+}
+
+/* Tarjeta base */
+.proyecto {
+  margin-top: 2rem;
+  background-color: #1e3a8a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align:justify;
+}
+
+/* Texto al lado de imagen */
+.proyecto .proyecto-texto, .proyecto .proyecto-imagen {
+  flex: 1;
+}
+
+.proyecto .proyecto-imagen img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Alinear textos en tarjeta */
+.proyecto.texto-izq, .proyecto.texto-der {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Acomoda en pantallas grandes */
+@media (min-width: 769px) {
+  .proyecto.texto-izq {
+    flex-direction: row;
+  }
+}
+
+/* Responsivo: apila texto e imagen */
+@media (max-width: 768px) {
+  .proyecto.texto-izq, .proyecto.texto-der {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .proyecto .proyecto-texto {
+    text-align: left;
+  }
+}
+
+.container[name="contacto"] {
+  background-color: #4682dd;
+  padding: 3rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container[name="contacto"] h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 3px solid #93c5fd; /* Alto contraste */
+}
+
+/* Botón */
+.contact-form button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #2563eb;
+}
+
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #24262B;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    
+}
+footer{
+  margin-top: 40px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    PADDING: 0 15PX;
+
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #ffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #FFFFFF;
+    padding-left: 6px;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.2);
+
+
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
+
+.social-link a:hover {
+    background-color: #00c3FF;
+}
+
+@media(max-width:991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-botton: 30px;
+    }
+}
+
+.footer-proyecto3 img{
+
+  margin-top: 7rem;
+  width: 240;
+  max-width: 240;
+  height: auto;
+  display: block;
+  margin: 50px ;
+  border-radius: 8px;
+
 }
